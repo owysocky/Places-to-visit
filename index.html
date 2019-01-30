@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Places</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Places you've visited</h1>
+
+      <form id="new-place">
+       <label for="place-name">Name of the place</label>
+       <input type="text" class="form-control" id="place-name">
+       <label for="time-of-the-year">When did you visit</label>
+       <input type="text" class="form-control" id="time-of-the-year">
+       <label for="location">Location of a place</label>
+       <input type="text" class="form-control" id="location">
+       <br>
+       <button type="submit" class="btn btn-info">Add a place</button>
+      </form>
+
+      <h2>My places</h2>
+      <ul id="my-places">
+      </ul>
+
+      <div id="show-places">
+       <p>Place name: <span class="place-name"></span></p>
+       <p>Time of the year: <span class="time-of-the-year"></span></p>
+       <p>Location: <span class="location"></span></p>
+       <div id="buttons"></div>
+      </div>
+    </div>
+  </body>
+</html>
